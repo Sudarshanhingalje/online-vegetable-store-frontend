@@ -1,0 +1,22 @@
+/* paymentsucess.css */
+
+.paymnent {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #b0e0e6; /* Light blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center the text */
+    margin: 20px; /* Margin around the component */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.paymnent p {
+    font-size: 18px; /* Font size for the paragraph */
+    color: #333; /* Dark gray text color */
+}
+
+.paymnent h1 {
+    font-size: 24px; /* Font size for the heading */
+    color: #2e8b57; /* Dark green text color */
+    margin-top: 10px; /* Margin above the heading */
+}

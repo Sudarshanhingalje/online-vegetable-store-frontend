@@ -1,0 +1,43 @@
+.registration {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.registration h1,h2{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: red;
+}
+
+.container {
+  max-width: 500px;
+  margin:  auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #42e267;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
