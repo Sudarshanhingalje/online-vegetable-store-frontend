@@ -37,8 +37,7 @@ const Registration = () => {
   };
   return (
     <div className="registration">
-      <h1>Registration Form</h1>
-      <h2>Register Here...</h2>
+    
       <div className="container">
         <form onSubmit={handleSubmit}>
           <img
