@@ -4,10 +4,6 @@ import "./CreditCard.css";
 
 const CreditCard = () => {
   const navigate = useNavigate();
-
-
-  //use state to save the card details
-
   const [cardName, setCardName] = useState("");
   const [cardNumber, setCardNumber] = useState("");
   const [cardMonth, setCardMonth] = useState("");
@@ -18,13 +14,13 @@ const CreditCard = () => {
   const currentYear = new Date().getFullYear();
   const minCardMonth = cardYear === currentYear.toString() ? new Date().getMonth() + 1 : 1;
 
-  // to show succeass page
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(cardName || cardNumber ||cardMonth || cardYear || cardCvv==="true"){
-    navigate("/paymentsuccess");
+    if (cardName || cardNumber || cardMonth || cardYear || cardCvv === "true") {
+      navigate("/paymentsuccess");
     }
-    else {alert("Please fill all the details");
+    else {
+      alert("Please fill all the details");
     }
   };
 
@@ -35,13 +31,13 @@ const CreditCard = () => {
           <div className="card-item__cover"></div>
 
           <div className="card-item__wrapper">
-          <div className="card-item__top">
-  <img
-    src="./images/chip.png" 
-    alt="Chip"
-    className="card-item__chip"
-  />
-</div>
+            <div className="card-item__top">
+              <img
+                src="./images/chip.png"
+                alt="Chip"
+                className="card-item__chip"
+              />
+            </div>
 
             <div className="card-item__content">
               <div className="card-item__info">
@@ -148,7 +144,7 @@ const CreditCard = () => {
                 onChange={(e) => setCardCvv(e.target.value)}
                 onFocus={() => setIsCardFlipped(true)}
                 onBlur={() => setIsCardFlipped(false)}
-                 
+
                 maxLength="3"
                 autoComplete="off"
               />

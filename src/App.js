@@ -6,10 +6,8 @@ import UserFeedback from "./components/Feedback/UserFeedback";
 import Indexes from "./components/ItemList/Indexes";
 import Registration from "./components/UserRegistration/Registration";
 import UserPaySuccess from "./components/PaymentSuccess/UserPaySuccess";
-  
-import SearchResults from "./components/Search/SearchResults";
 
-//all the routes points are to be here 
+
 const App = () => {
   return (
     <Router>
@@ -22,8 +20,6 @@ const App = () => {
           <Route path="/Registration" element={<Registration />} />
           <Route path="/paymentsuccess" element={<UserPaySuccess />} />
 
-          <Route path="/search-results" element={<SearchResults />} />
-          
         </Routes>
       </div>
     </Router>

@@ -8,11 +8,10 @@ const FeedbackForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Feedback:', feedback);
-    // Reset form fields after submission
+
     setName('');
     setEmail('');
     setFeedback('');
@@ -34,7 +33,7 @@ const FeedbackForm = () => {
         <label htmlFor="email">Email:</label>
         <input
           type="email"
-          id="email"         value={email}
+          id="email" value={email}
           onChange={(event) => setEmail(event.target.value)}
           required
         />
@@ -51,7 +50,6 @@ const FeedbackForm = () => {
       <button type="submit">Submit</button>
     </form>
   );
- };
- 
- export default FeedbackForm;
- 
+};
+
+export default FeedbackForm;

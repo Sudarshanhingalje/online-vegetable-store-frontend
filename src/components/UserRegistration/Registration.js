@@ -7,12 +7,12 @@ const Registration = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
+    mobileNumber: "",
+    birthDate: "",
+    gender: "",
     address: "",
     country: "",
-    phone: "",
-    password: "",
-    confirmPassword: "",
-    
+    postalCode: "",
   });
 
   const handleChange = (e) => {
@@ -21,66 +21,57 @@ const Registration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match!");
-    } else {
-      console.log("Form Submitted:", formData);
-
-      alert("Registration Successful! please login");
-      navigate("/");
-    }
-  
-  
-
-
-
+    console.log("Form Submitted:", formData);
+    alert("Registration Successful! Please log in.");
+    navigate("/");
   };
+
   return (
     <div className="registration">
-    
       <div className="container">
+        <h2>Registration Form</h2>
+        <img className="register-image" src="/images/register.jpg" alt="Register" />
         <form onSubmit={handleSubmit}>
-          <img
-            className="avatar"
-            src="https://th.bing.com/th/id/OIP.xVNJ8VpYO02_odVFhqW5rgHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-            alt="avatar"
-          />
-          <br />
           <label>Full Name:</label>
-          <br />
           <input
             type="text"
             name="fullName"
-            placeholder="Name.."
+            placeholder="Enter full name"
             value={formData.fullName}
             onChange={handleChange}
             required
           />
-          <br />
-          <label>Email:</label>
-          <br />
+
+          <label>Email Address:</label>
           <input
             type="email"
             name="email"
-            placeholder="Email Address.."
+            placeholder="Enter email address"
             value={formData.email}
             onChange={handleChange}
             required
           />
-          <br />
-          <label>Address :</label>
-          <br />
+
+          <label>Mobile Number:</label>
           <input
-            type="address"
-            name="address"
-            value={formData.address}
-             placeholder="Address.."
+            type="tel"
+            name="mobileNumber"
+            placeholder="Enter mobile number"
+            value={formData.mobileNumber}
             onChange={handleChange}
             required
           />
-          <br />
+          <label>Address:</label>
+          <input
+            type="text"
+            name="address"
+            placeholder="Enter address"
+            value={formData.address}
+            onChange={handleChange}
+            required
+          />
+
           <label>Country:</label>
-          <br />
           <select
             name="country"
             value={formData.country}
@@ -88,54 +79,25 @@ const Registration = () => {
             required
           >
             <option value="" disabled>
-              --Select Country--
+              Select country
             </option>
             <option value="India">India</option>
             <option value="USA">USA</option>
             <option value="Canada">Canada</option>
             <option value="UK">UK</option>
-            <option value="England">England</option>
           </select>
-          <br />
-          <label>Phone Number:</label>
-          <br />
+
+          <label>Postal Code:</label>
           <input
-            type="tel"
-            name="phone"
-            placeholder="Enter Phone Number.."
-            value={formData.phone}
-            onChange={handleChange}
-          />
-          <br />
-          <label>Password:</label>
-          <br />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formData.password}
+            type="text"
+            name="postalCode"
+            placeholder="Enter postal code"
+            value={formData.postalCode}
             onChange={handleChange}
             required
           />
-          <br />
-          <label>Confirm Password:</label>
-          <br />
-          <input
-            type="password"
-            name="confirmPassword"
-            placeholder="Confirm Password"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            required
-          />
-          <br />
-          <input
-            type="checkbox"
-            required
-          />{" "}
-          I agree to Terms & Conditions
-          <br />
-          <button onClick={ handleSubmit} className="btn" type="submit">Register</button>
+
+          <button type="submit">Register</button>
         </form>
       </div>
     </div>

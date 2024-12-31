@@ -425,7 +425,7 @@ menu-btn {
 
 .features {
   padding: 60px 20px;
-  background-image: url(/src/background/bghome/lauren-mancke-sil2Hx4iupI-unsplash.jpg);
+  background-image: url(/src/background/bghome/bg6.jpg);
 }
 
 .features .box-container {
@@ -547,7 +547,7 @@ menu-btn {
 /* Categories Section */
 .categories {
   padding: 60px 20px;
-  background-image: url(/src/background/bghome/lauren-mancke-sil2Hx4iupI-unsplash.jpg );
+  background-image: url(/src/background/bghome/bg6.jpg );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -595,19 +595,10 @@ menu-btn {
 /* Review Section */
 .review {
   padding: 60px 20px;
-  /* background-image: url(/src/background/bghome/pineapples-1853466_1280.jpg);
+  background-image: url(/src/background/bghome/pineapples-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
-}
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  height: 100%;
-  object-fit: cover; 
-  z-index: -1; 
+  background-position: center;
 }
 
 .review .heading {

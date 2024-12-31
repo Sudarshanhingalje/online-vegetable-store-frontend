@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faTrashArrowUp , faUser, faSearch, faBars, faPhone, faEnvelope, faMapMarkerAlt, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faTrashArrowUp, faUser, faSearch, faBars, faPhone, faEnvelope, faMapMarkerAlt, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Index.css';
 
@@ -13,11 +13,6 @@ import { Autoplay } from "swiper/modules";
 import 'swiper/css/autoplay';
 
 import photo from "../../background/photo.png"
-
-
-
-
-
 
 
 const Index = () => {
@@ -79,7 +74,7 @@ const Index = () => {
       {isSearchVisible && (
         <form className="search-form">
           <input type="search" id="search-box" placeholder="search here..." />
-          
+
           <label htmlFor="search-box">
             <FontAwesomeIcon icon={faSearch} />
           </label>
@@ -201,33 +196,19 @@ const Index = () => {
               <a key={link} href={`#${link}`} className="quick-link">
                 <FontAwesomeIcon icon={faArrowRight} /> {link}
               </a>
-              
+
             ))}
           </div>
           <div className='footer-img'>
-        <img src={photo} alt="A scenic view" />;
+            <img src={photo} alt="A scenic view" />;
 
+          </div>
         </div>
-        </div>
-        
+
       </footer>
     </div>
   );
 };
-
-// Helper Components
-// const CartItem = ({ image, name, price, quantity }) => (
-//   <div className="box">
-//     <FontAwesomeIcon icon={faTrash} className="delete-icon" />
-//     <img src={image} alt={name} />
-//     <div className="content">
-//       <h3>{name}</h3>
-//       <span className="price">{price} / kg</span>
-//       <span className="quantity">qty: {quantity}</span>
-//     </div>
-//   </div>
-// );
-
 // Cart Item Component
 const CartItem = ({ image, name, price, quantity }) => (
   <div className="cart-item">
@@ -290,7 +271,7 @@ const ReviewSection = () => {
     <section className="review" id="review">
       {/* Video Background */}
       <video className="background-video" src={videos} autoPlay muted loop>
-        
+
       </video>
 
       {/* Review Content */}
@@ -352,7 +333,7 @@ const ProductSlider = () => {
     { name: "Fresh Garlic", price: "₹290", img: "product-11.jpg" },  // (3.49 * 83)
     { name: "Fresh Lemons", price: "₹290", img: "product-12.jpg" },  // (3.49 * 83)
   ];
-  
+
 
   // Function to handle adding a product to the cart
   const handleAddToCart = (product) => {
