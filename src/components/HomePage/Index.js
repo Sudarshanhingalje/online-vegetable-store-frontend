@@ -3,10 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faTrashArrowUp, faUser, faSearch, faBars, faPhone, faEnvelope, faMapMarkerAlt, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Index.css';
-
-import logo from '../../background/logo.jpg';
-
-
+import logo from '../../background/logo.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from "swiper/modules";
@@ -170,8 +167,8 @@ const Index = () => {
             <h3>Green Basket <FontAwesomeIcon icon={faShoppingCart} /></h3>
             <p>Your trusted source for fresh, organic produce delivered right to your door.</p>
             <div className="social-links">
-              <a href="https://www.instagram.com/its_sudarshan___10/profilecard/?igsh=MTZ2OHZ3OG02dG1zZg== "><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href="www.linkedin.com/in/sudarshan-hingalje-b07993158"><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href="https://www.instagram.com/its_sudarshan___10/profilecard/?igsh=MTZ2OHZ3OG02dG1zZg=="><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="www.linkedin.com/in/sudarshan-hingalje-b07993158/"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </div>
 
@@ -238,7 +235,7 @@ const CategoryBox = ({ image, title, discount }) => (
 );
 
 const ReviewSection = () => {
-  const videos = "/videoplayback.mp4";
+  
   const reviews = [
     {
       img: "../images/pic-1.png",
@@ -269,11 +266,6 @@ const ReviewSection = () => {
 
   return (
     <section className="review" id="review">
-      {/* Video Background */}
-      <video className="background-video" src={videos} autoPlay muted loop>
-
-      </video>
-
       {/* Review Content */}
       <h2 className="heading">
         Customer <span>Reviews</span>
